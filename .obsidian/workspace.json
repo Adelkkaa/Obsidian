@@ -1,0 +1,177 @@
+{
+  "main": {
+    "id": "85b1b09b59deb897",
+    "type": "split",
+    "children": [
+      {
+        "id": "9d0bc9fca169e4f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8376a13dc3925378",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Алгоритмы/Сложность, тестирование, особые случаи.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "98146016e4a56984",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "777ea0a9e61d2f6b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Алгоритмы/Сложность, тестирование, особые случаи.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b4d685448241a6e8",
+    "type": "split",
+    "children": [
+      {
+        "id": "1fa36fb08028883e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cf5aad618e455991",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7fb0610417b443bb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d9922c5477b52da2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fbeadcf4c7942dfa",
+    "type": "split",
+    "children": [
+      {
+        "id": "f32e85152b089d1e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "154d1ace8c42b218",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Алгоритмы/Сложность, тестирование, особые случаи.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "31f9c30bc35ad063",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Алгоритмы/Сложность, тестирование, особые случаи.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a6fb9c2b573a2016",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8ab365259a9096c0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Алгоритмы/Сложность, тестирование, особые случаи.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
+    }
+  },
+  "active": "8376a13dc3925378",
+  "lastOpenFiles": [
+    "Алгоритмы/Сложность, тестирование, особые случаи.md",
+    "threeJS/Без названия.md",
+    "Алгоритмы",
+    "threeJS",
+    "Добро пожаловать.md",
+    "Без названия.canvas",
+    "2024-09-15.md"
+  ]
+}

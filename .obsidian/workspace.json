@@ -13,26 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Алгоритмы/Сложность, тестирование, особые случаи.md",
+                "file": "Алгоритмы/Множества.md",
                 "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "98146016e4a56984",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "777ea0a9e61d2f6b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Алгоритмы/Сложность, тестирование, особые случаи.md",
-                "mode": "preview",
                 "source": false
               }
             }
@@ -103,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Алгоритмы/Сложность, тестирование, особые случаи.md",
+                "file": "Алгоритмы/Множества.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Алгоритмы/Сложность, тестирование, особые случаи.md",
+                "file": "Алгоритмы/Множества.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Алгоритмы/Сложность, тестирование, особые случаи.md"
+                "file": "Алгоритмы/Множества.md"
               }
             }
           }
@@ -167,6 +149,10 @@
   "active": "8376a13dc3925378",
   "lastOpenFiles": [
     "Алгоритмы/Сложность, тестирование, особые случаи.md",
+    "Алгоритмы/Множества.md",
+    "Алгоритмы/Линейный поиск.md",
+    "Pasted image 20240916193210.png",
+    "Pasted image 20240916193149.png",
     "threeJS/Без названия.md",
     "Алгоритмы",
     "threeJS",

@@ -11,9 +11,29 @@
             "id": "8376a13dc3925378",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "OAuth 2.0/Untitled.png"
+              }
+            }
+          },
+          {
+            "id": "08387314cd78ec4f",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "OAuth 2.0/Untitled 1.png"
+              }
+            }
+          },
+          {
+            "id": "cf85a328cd4e3921",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Алгоритмы/Словари и сортировка подсчётом.md",
+                "file": "HTML/HTML.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +51,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -97,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Алгоритмы/Словари и сортировка подсчётом.md",
+                "file": "HTML/HTML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Алгоритмы/Словари и сортировка подсчётом.md",
+                "file": "HTML/HTML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Алгоритмы/Словари и сортировка подсчётом.md"
+                "file": "HTML/HTML.md"
               }
             }
           }
@@ -158,11 +179,34 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "8376a13dc3925378",
+  "active": "cf85a328cd4e3921",
   "lastOpenFiles": [
-    "Курс UlbiTV/5 Lesson.md",
-    "Курс UlbiTV/4 Lesson.md",
+    "HTML/Untitled.png",
+    "Webpack/Webpack Core.md",
     "Webpack/Webpack dev server.md",
+    "Docker/Docker b5b0e2a4cfd3405085096a0e5329a126.md",
+    "HTML/Untitled 24.png",
+    "HTML/Untitled 19.png",
+    "HTML/Untitled 17.png",
+    "HTML/Untitled 14.png",
+    "HTML/Untitled 12.png",
+    "HTML/Untitled 9.png",
+    "HTML/Untitled 6.png",
+    "HTML/Untitled 3.png",
+    "HTML/Untitled 2.png",
+    "HTML/Untitled 1.png",
+    "HTML/HTML.md",
+    "HTML",
+    "Новая папка",
+    "OAuth 2.0/OAuth 2 0 59d0f1d2aba8449ba457007d929b9f59.md",
+    "OIDC/OpenID Connect cd0578d265fa4929905d85491625bb6c.md",
+    "OIDC",
+    "Docker",
+    "OAuth 2.0",
+    "Oauth 2.0",
+    "Курс UlbiTV/5 Lesson.md",
+    "Алгоритмы/Словари и сортировка подсчётом.md",
+    "Курс UlbiTV/4 Lesson.md",
     "Webpack/Перевод webpack конфига на typescript.md",
     "Курс UlbiTV/3 lesson.md",
     "Курс UlbiTV/2 Lesson.md",
@@ -174,8 +218,6 @@
     "Webpack",
     "Алгоритмы/Сложность, тестирование, особые случаи.md",
     "Алгоритмы/Линейный поиск.md",
-    "Pasted image 20240916193210.png",
-    "Pasted image 20240916193149.png",
     "threeJS/Без названия.md",
     "Алгоритмы",
     "threeJS",

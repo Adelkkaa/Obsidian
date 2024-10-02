@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML/HTML.md",
+                "file": "Курс UlbiTV/6 Lesson.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HTML/HTML.md",
+                "file": "Курс UlbiTV/6 Lesson.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HTML/HTML.md",
+                "file": "Курс UlbiTV/6 Lesson.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTML/HTML.md"
+                "file": "Курс UlbiTV/6 Lesson.md"
               }
             }
           }
@@ -181,8 +181,13 @@
   },
   "active": "cf85a328cd4e3921",
   "lastOpenFiles": [
-    "HTML/Untitled.png",
+    "Курс UlbiTV/5 Lesson.md",
+    "Курс UlbiTV/6 Lesson.md",
     "Webpack/Webpack Core.md",
+    "Курс UlbiTV/4 Lesson.md",
+    "Курс UlbiTV/Порядок прохождения.md",
+    "HTML/HTML.md",
+    "HTML/Untitled.png",
     "Webpack/Webpack dev server.md",
     "Docker/Docker b5b0e2a4cfd3405085096a0e5329a126.md",
     "HTML/Untitled 24.png",
@@ -194,8 +199,6 @@
     "HTML/Untitled 6.png",
     "HTML/Untitled 3.png",
     "HTML/Untitled 2.png",
-    "HTML/Untitled 1.png",
-    "HTML/HTML.md",
     "HTML",
     "Новая папка",
     "OAuth 2.0/OAuth 2 0 59d0f1d2aba8449ba457007d929b9f59.md",
@@ -204,15 +207,12 @@
     "Docker",
     "OAuth 2.0",
     "Oauth 2.0",
-    "Курс UlbiTV/5 Lesson.md",
     "Алгоритмы/Словари и сортировка подсчётом.md",
-    "Курс UlbiTV/4 Lesson.md",
     "Webpack/Перевод webpack конфига на typescript.md",
     "Курс UlbiTV/3 lesson.md",
     "Курс UlbiTV/2 Lesson.md",
     "Курс UlbiTV/1 Lesson.md",
     "Webpack/Начало работы с webpack.md",
-    "Курс UlbiTV/Порядок прохождения.md",
     "Курс UlbiTV",
     "Алгоритмы/Множества.md",
     "Webpack",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Курс UlbiTV/5 Lesson.md",
+                "file": "Алгоритмы/Словари и сортировка подсчётом.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Курс UlbiTV/5 Lesson.md",
+                "file": "Алгоритмы/Словари и сортировка подсчётом.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Курс UlbiTV/5 Lesson.md",
+                "file": "Алгоритмы/Словари и сортировка подсчётом.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Курс UlbiTV/5 Lesson.md"
+                "file": "Алгоритмы/Словари и сортировка подсчётом.md"
               }
             }
           }
@@ -150,18 +150,18 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
     }
   },
   "active": "8376a13dc3925378",
   "lastOpenFiles": [
-    "Курс UlbiTV/4 Lesson.md",
     "Курс UlbiTV/5 Lesson.md",
+    "Курс UlbiTV/4 Lesson.md",
     "Webpack/Webpack dev server.md",
     "Webpack/Перевод webpack конфига на typescript.md",
     "Курс UlbiTV/3 lesson.md",

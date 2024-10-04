@@ -8,31 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8376a13dc3925378",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "OAuth 2.0/Untitled.png"
-              }
-            }
-          },
-          {
-            "id": "08387314cd78ec4f",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "OAuth 2.0/Untitled 1.png"
-              }
-            }
-          },
-          {
             "id": "cf85a328cd4e3921",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "I18n/I18n.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -41,14 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Курс UlbiTV/1 Lesson.md",
+                "file": "Курс UlbiTV/16 Lesson.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -114,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Курс UlbiTV/16 Lesson.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Курс UlbiTV/16 Lesson.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Курс UlbiTV/16 Lesson.md"
+              }
             }
           }
         ]
@@ -171,8 +159,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cf85a328cd4e3921",
+  "active": "78a1bf2d96de0014",
   "lastOpenFiles": [
+    "Курс UlbiTV/15 Lesson.md",
+    "Курс UlbiTV/16 Lesson.md",
+    "Курс UlbiTV/1 Lesson.md",
+    "I18n/I18n.md",
+    "Pasted image 20241004124358.png",
+    "I18n",
+    "Курс UlbiTV/14 Lesson.md",
+    "Курс UlbiTV/13 Lesson.md",
+    "Курс UlbiTV/12 Lesson.md",
+    "Курс UlbiTV/11 Lesson.md",
+    "Курс UlbiTV/10 Lesson.md",
     "Курс UlbiTV/8 Lesson.md",
     "Курс UlbiTV/7 Lesson.md",
     "Курс UlbiTV/6 Lesson.md",
@@ -192,7 +191,6 @@
     "HTML/Untitled 9.png",
     "HTML/Untitled 6.png",
     "HTML/Untitled 3.png",
-    "HTML/Untitled 2.png",
     "HTML",
     "Новая папка",
     "OAuth 2.0/OAuth 2 0 59d0f1d2aba8449ba457007d929b9f59.md",
@@ -205,18 +203,10 @@
     "Webpack/Перевод webpack конфига на typescript.md",
     "Курс UlbiTV/3 lesson.md",
     "Курс UlbiTV/2 Lesson.md",
-    "Курс UlbiTV/1 Lesson.md",
     "Webpack/Начало работы с webpack.md",
     "Курс UlbiTV",
-    "Алгоритмы/Множества.md",
     "Webpack",
-    "Алгоритмы/Сложность, тестирование, особые случаи.md",
-    "Алгоритмы/Линейный поиск.md",
-    "threeJS/Без названия.md",
     "Алгоритмы",
-    "threeJS",
-    "Добро пожаловать.md",
-    "Без названия.canvas",
-    "2024-09-15.md"
+    "Без названия.canvas"
   ]
 }

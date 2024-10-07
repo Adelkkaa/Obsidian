@@ -31,8 +31,12 @@
             "id": "cf85a328cd4e3921",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Курс UlbiTV/20 Lesson.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -114,6 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Курс UlbiTV/20 Lesson.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,6 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Курс UlbiTV/20 Lesson.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +157,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Курс UlbiTV/20 Lesson.md"
+              }
             }
           }
         ]

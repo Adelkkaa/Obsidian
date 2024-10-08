@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "I18n/I18n.md",
+                "file": "Тестирование/React-Testing Library.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Тестирование/Jest.md",
+                "file": "Курс UlbiTV/24 Lesson.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Тестирование/Jest.md",
+                "file": "Тестирование/React-Testing Library.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Тестирование/Jest.md",
+                "file": "Тестирование/React-Testing Library.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Тестирование/Jest.md"
+                "file": "Тестирование/React-Testing Library.md"
               }
             }
           }
@@ -159,17 +158,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "78a1bf2d96de0014",
+  "active": "cf85a328cd4e3921",
   "lastOpenFiles": [
-    "Курс UlbiTV/20 Lesson.md",
+    "I18n/I18n.md",
+    "Курс UlbiTV/24 Lesson.md",
+    "Тестирование/React-Testing Library.md",
     "Тестирование/Jest.md",
+    "Курс UlbiTV/23 Lesson.md",
+    "Курс UlbiTV/22 Lesson.md",
+    "Курс UlbiTV/21 Lesson.md",
+    "Курс UlbiTV/20 Lesson.md",
     "Тестирование",
     "Курс UlbiTV/16 Lesson.md",
     "Курс UlbiTV/19 Lesson.md",
     "Курс UlbiTV/18 Lesson.md",
     "Курс UlbiTV/15 Lesson.md",
     "Курс UlbiTV/1 Lesson.md",
-    "I18n/I18n.md",
     "Pasted image 20241004124358.png",
     "I18n",
     "Курс UlbiTV/14 Lesson.md",
@@ -186,8 +190,6 @@
     "Курс UlbiTV/Порядок прохождения.md",
     "HTML/HTML.md",
     "HTML/Untitled.png",
-    "Webpack/Webpack dev server.md",
-    "Docker/Docker b5b0e2a4cfd3405085096a0e5329a126.md",
     "HTML/Untitled 24.png",
     "HTML/Untitled 19.png",
     "HTML/Untitled 17.png",
@@ -198,13 +200,10 @@
     "HTML/Untitled 3.png",
     "HTML",
     "Новая папка",
-    "OAuth 2.0/OAuth 2 0 59d0f1d2aba8449ba457007d929b9f59.md",
-    "OIDC/OpenID Connect cd0578d265fa4929905d85491625bb6c.md",
     "OIDC",
     "Docker",
     "OAuth 2.0",
     "Oauth 2.0",
-    "Алгоритмы/Словари и сортировка подсчётом.md",
     "Курс UlbiTV",
     "Webpack",
     "Без названия.canvas"

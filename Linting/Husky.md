@@ -4,6 +4,35 @@
 
 ## Порядок установки
 
-```.bash
-git 
+```shell
+npx husky init
 ```
+
+Появится папка  .husky, внутри которой будет pre-commit
+
+В данный файл необходимо положить комманды, которые исполняться перед коммитом, если что-то упадет с ошибкой, то коммит не отправится в историю
+
+Пример заполнения файла:
+
+```
+npm run build:prod
+npm run lint:ts
+npm run lint:scss
+npm run test:unit
+```
+
+Раньше husky не работал в помощнике git vscode (source control), сейчас заработал
+
+Если вы склонировали  проект, где есть husky, то необходимо прогнать 
+
+```shell
+npm run prepare
+```
+
+```json
+"scripts": {
+    "prepare": "husky"
+  },
+```
+
+

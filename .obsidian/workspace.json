@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9d0bc9fca169e4f7",
+        "id": "ea9227f78b706314",
         "type": "tabs",
         "children": [
           {
-            "id": "78a1bf2d96de0014",
+            "id": "bdc915c9bb1d8a9f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linting/Husky.md",
+                "file": "Redux/Redux Toolkit.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linting/Husky.md",
+                "file": "Redux/Redux Toolkit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linting/Husky.md",
+                "file": "Redux/Redux Toolkit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linting/Husky.md"
+                "file": "Redux/Redux Toolkit.md"
               }
             }
           }
@@ -146,8 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "78a1bf2d96de0014",
+  "active": "bdc915c9bb1d8a9f",
   "lastOpenFiles": [
+    "Redux/Redux Toolkit.md",
+    "Redux/Flux.md",
+    "Redux/Redux - База.md",
+    "Pasted image 20241014194618.png",
+    "Redux.md",
+    "Redux/Redux.md",
+    "Untitled.md",
+    "Redux",
+    "Тестирование/Storybook.md",
+    "Тестирование/React-Testing Library.md",
+    "Тестирование/Jest.md",
+    "Курс UlbiTV/34 Lesson.md",
     "Курс UlbiTV/33 Lesson.md",
     "Linting/Husky.md",
     "Linting",
@@ -168,16 +180,6 @@
     "Курс UlbiTV/31.1 Lesson.md",
     "Курс UlbiTV/31 Lesson.md",
     "Курс UlbiTV/30 Lesson.md",
-    "Курс UlbiTV/29 Lesson.md",
-    "Курс UlbiTV/28 Lesson.md",
-    "Курс UlbiTV/27 Lesson.md",
-    "Тестирование/Storybook.md",
-    "Курс UlbiTV/26 Lesson.md",
-    "Курс UlbiTV/Порядок прохождения.md",
-    "2024-10-10.md",
-    "Курс UlbiTV/25 Lesson.md",
-    "Тестирование/React-Testing Library.md",
-    "I18n/I18n.md",
     "Тестирование",
     "Pasted image 20241004124358.png",
     "I18n",
@@ -189,14 +191,12 @@
     "HTML/Untitled 12.png",
     "HTML/Untitled 9.png",
     "HTML/Untitled 6.png",
-    "HTML/Untitled 3.png",
     "HTML",
     "Новая папка",
     "OIDC",
     "Docker",
     "OAuth 2.0",
     "Oauth 2.0",
-    "Курс UlbiTV",
     "Без названия.canvas"
   ]
 }

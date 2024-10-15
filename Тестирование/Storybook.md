@@ -54,6 +54,11 @@ addDecorator(RouterDecorator);
 ```
 
 Также сторибук нужно учить работать с различными лодерами, в том же месте где лежит конфигурация создается webpack.config.ts
+
+> Очень важно отметить, что в модули нужно вставлять наш путь до src в самое начало, чтобы сборщик искал испорты в первую очередь в нашей рабочей директории, а не в  node_modules (Такое мне понадобилось при отсутствии alias в проекте, где импорты были подобны "==entities/Counter==")
+
+
+
 ```ts
 import webpack, { RuleSetRule } from 'webpack';
 
@@ -79,7 +84,7 @@ export default ({ config }: {config: webpack.Configuration}) => {
 	
 	};
 	
-	config.resolve.modules.push(paths.src);
+	config.resolve.modules.unshift(paths.src);
 	
 	config.resolve.extensions.push('.ts', '.tsx');
 	

@@ -217,3 +217,139 @@ Storybook обычно используют вместе с инструмент
 2) Запускаем докер
 3) Запускаем сторибук
 4) Стартуем тесты
+
+## Адаптация под async reducers (Redux)
+
+Для того, чтобы сторибук работал корректно необходимо в декоратор передавать асинхронные редьюсеры, которые мы должны использовать
+
+Про асинхронные редьюсеры [[Redux Оптимизация|читай тут]]
+
+```tsx
+import { Story } from '@storybook/react';
+import { StateSchema, StoreProvider } from 'app/providers/StoreProvider';
+import { DeepPartial, ReducersMapObject } from '@reduxjs/toolkit';
+import { loginReducer } from 'features/AuthByUsername';
+
+const defaultAsyncReducers: DeepPartial<ReducersMapObject<StateSchema>> = {
+    loginForm: loginReducer,
+};
+
+export const StoreDecorator = (
+    state: DeepPartial<StateSchema>,
+    asyncReducers?: DeepPartial<ReducersMapObject<StateSchema>>,
+) => (StoryComponent: Story) => (
+    <StoreProvider
+        initialState={state}
+        asyncReducers={{ ...defaultAsyncReducers, ...asyncReducers }}
+    >
+        <StoryComponent />
+    </StoreProvider>
+);
+
+```
+
+Как видно из примера, мы передаем и initialState, и asyncReducers
+
+Вот компонент StoreProvider
+
+```tsx
+import { ReactNode } from 'react';
+import { Provider } from 'react-redux';
+import { createReduxStore } from 'app/providers/StoreProvider';
+import { StateSchema } from 'app/providers/StoreProvider/config/StateSchema';
+import { DeepPartial, ReducersMapObject } from '@reduxjs/toolkit';
+
+interface StoreProviderProps {
+    children?: ReactNode;
+    initialState?: DeepPartial<StateSchema>;
+    asyncReducers?: DeepPartial<ReducersMapObject<StateSchema>>
+}
+
+export const StoreProvider = (props: StoreProviderProps) => {
+    const {
+        children,
+        initialState,
+        asyncReducers,
+    } = props;
+
+    const store = createReduxStore(initialState as StateSchema, asyncReducers as ReducersMapObject<StateSchema>);
+
+    return (
+        <Provider store={store}>
+            {children}
+        </Provider>
+    );
+};
+
+```
+
+createReduxStore
+
+```ts
+import { configureStore, ReducersMapObject } from '@reduxjs/toolkit';
+import { counterReducer } from 'entities/Counter';
+import { userReducer } from 'entities/User';
+import { StateSchema } from './StateSchema';
+import { createReducerManager } from './reducerManager';
+
+export const createReduxStore = (initialState?: StateSchema, asyncReducers?: ReducersMapObject<StateSchema>) => {
+    const rootReducers: ReducersMapObject<StateSchema> = {
+        ...asyncReducers,
+        counter: counterReducer,
+        user: userReducer,
+    };
+
+    const reducerManager = createReducerManager(rootReducers);
+
+    const store = configureStore({
+        reducer: reducerManager.reduce,
+        devTools: __IS_DEV__,
+        preloadedState: initialState,
+    });
+
+    // @ts-ignore
+    store.reducerManager = reducerManager;
+
+    return store;
+};
+
+```
+
+Использование:
+
+```tsx
+import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
+import LoginForm from './LoginForm';
+
+export default {
+    title: 'features/LoginForm',
+    component: LoginForm,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
+} as ComponentMeta<typeof LoginForm>;
+
+const Template: ComponentStory<typeof LoginForm> = (args) => <LoginForm {...args} />;
+
+export const Primary = Template.bind({});
+Primary.args = {};
+Primary.decorators = [StoreDecorator({
+    loginForm: { username: '123', password: 'asd' },
+})];
+
+export const withError = Template.bind({});
+withError.args = {};
+withError.decorators = [StoreDecorator({
+    loginForm: { username: '123', password: 'asd', error: 'ERROR' },
+})];
+
+export const Loading = Template.bind({});
+Loading.args = {};
+Loading.decorators = [StoreDecorator({
+    loginForm: { isLoading: true },
+})];
+
+```
+

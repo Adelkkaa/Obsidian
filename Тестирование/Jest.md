@@ -258,6 +258,13 @@ export const { reducer: loginReducer } = loginSlice;
 
 ```
 
+Нужно декларировать тип DeepPartial
+
+```ts
+type DeepPartial<T> = T extends object ? {
+    [P in keyof T]?: DeepPartial<T[P]>;
+} : T;
+```
 
 ### Тестирование Selector's
 
@@ -285,7 +292,6 @@ export interface StateSchema {
 Для того, чтобы протестировать селектор - необходимо замокать стейт
 
 ```ts
-import { DeepPartial } from '@reduxjs/toolkit';
 import { StateSchema } from 'app/providers/StoreProvider';
 import { getLoginPassword } from './getLoginPassword';
 
@@ -359,7 +365,6 @@ describe('loginSlice', () => {
 Его можно передавать также через DeepPartial, на выходе получим тесты следующего вида
 
 ```ts
-import { DeepPartial } from '@reduxjs/toolkit';
 import { ILoginSchema } from '../types/LoginSchema';
 import { loginActions, loginReducer } from './loginSlice';
 

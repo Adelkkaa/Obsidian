@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redux/Redux Toolkit.md",
+                "file": "Курс UlbiTV/40 Lesson.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Redux/Redux Toolkit.md",
+                "file": "Курс UlbiTV/40 Lesson.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Redux/Redux Toolkit.md",
+                "file": "Курс UlbiTV/40 Lesson.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Redux/Redux Toolkit.md"
+                "file": "Курс UlbiTV/40 Lesson.md"
               }
             }
           }
@@ -148,11 +148,14 @@
   },
   "active": "beb596ccaadc9b42",
   "lastOpenFiles": [
-    "Курс UlbiTV/38 Lesson.md",
+    "Тестирование/Jest.md",
+    "Курс UlbiTV/40 Lesson.md",
     "Redux/Redux Toolkit.md",
+    "Курс UlbiTV/39 Lesson.md",
+    "Курс UlbiTV/1 Lesson.md",
+    "Курс UlbiTV/38 Lesson.md",
     "Курс UlbiTV/37 Lesson.md",
     "Курс UlbiTV/36 Lesson.md",
-    "Тестирование/Jest.md",
     "Тестирование/Storybook.md",
     "Курс UlbiTV/35 Lesson.md",
     "Redux/Redux Оптимизация.md",
@@ -177,9 +180,6 @@
     "Untitled.canvas",
     "2024-10-14.md",
     "Курс UlbiTV/4 Lesson.md",
-    "Курс UlbiTV/5 Lesson.md",
-    "Курс UlbiTV/6 Lesson.md",
-    "Курс UlbiTV/14 Lesson.md",
     "Тестирование",
     "Pasted image 20241004124358.png",
     "I18n",

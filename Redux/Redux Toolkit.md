@@ -224,3 +224,110 @@ export const { reducer: loginReducer } = loginSlice;
 dispatch(loginByUsername({ username: username.toString(), password: password.toString() }));
 ```
 
+### Использования extra в async thunk
+
+В async thunk можно передать различные аргументы в экстра, например baseApi, функцию navigate и так далее
+
+Чтобы это сделать необходимо при конфигурации стора указать middleware
+
+```ts
+import { configureStore, ReducersMapObject } from '@reduxjs/toolkit';
+import { counterReducer } from 'entities/Counter';
+import { userReducer } from 'entities/User';
+import { $api } from 'shared/api/api';
+import { NavigateOptions, To } from 'react-router-dom';
+import { StateSchema, ThunkExtraArg } from './StateSchema';
+import { createReducerManager } from './reducerManager';
+
+export const createReduxStore = (
+    initialState?: StateSchema,
+    asyncReducers?: ReducersMapObject<StateSchema>,
+    navigate?: (to: To, options?: NavigateOptions) => void,
+) => {
+    const rootReducers: ReducersMapObject<StateSchema> = {
+        ...asyncReducers,
+        counter: counterReducer,
+        user: userReducer,
+    };
+
+    const reducerManager = createReducerManager(rootReducers);
+
+    const extraArg: ThunkExtraArg = {
+        api: $api,
+        navigate,
+    };
+
+    const store = configureStore({
+        reducer: reducerManager.reduce,
+        devTools: __IS_DEV__,
+        preloadedState: initialState,
+        middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+            thunk: {
+                extraArgument: extraArg,
+            },
+        }),
+    });
+
+    // @ts-ignore
+    store.reducerManager = reducerManager;
+
+    return store;
+};
+
+export type AppDispatch = ReturnType<typeof createReduxStore>['dispatch'];
+
+```
+
+Вот так происходит использование 
+```ts
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import { User, userActions } from 'entities/User';
+import { USER_LOCALSTORAGE_KEY } from 'shared/const/localstorage';
+import { ThunkConfig } from 'app/providers/StoreProvider';
+
+interface LoginByUsernameProps {
+    username: string;
+    password: string;
+}
+
+export const loginByUsername = createAsyncThunk<
+    User,
+    LoginByUsernameProps,
+    ThunkConfig<string>
+>(
+    'login/loginByUsername',
+    async (authData, thunkApi) => {
+        const { extra, dispatch, rejectWithValue } = thunkApi;
+
+        try {
+            const response = await extra.api.post<User>('/login', authData);
+
+            if (!response.data) {
+                throw new Error();
+            }
+
+            localStorage.setItem(USER_LOCALSTORAGE_KEY, JSON.stringify(response.data));
+            dispatch(userActions.setAuthData(response.data));
+            extra.navigate('/profile');
+            return response.data;
+        } catch (e) {
+            console.log(e);
+            return rejectWithValue('error');
+        }
+    },
+);
+
+```
+
+Вкратце объясню типы в generic
+1 Тип - Возвращаемое значение
+2 Тип - Передаваемое значение
+3 Тип - Который содержит ThunkApiConfig
+
+В данном случае ThunkApiConfig: 
+```ts
+export interface ThunkConfig<T> {
+    rejectValue: T;
+    extra: ThunkExtraArg;
+}
+```

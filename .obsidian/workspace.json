@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Тестирование/Storybook.md",
+                "file": "Redux/Redux Toolkit.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Тестирование/Storybook.md",
+                "file": "Redux/Redux Toolkit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Тестирование/Storybook.md",
+                "file": "Redux/Redux Toolkit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Тестирование/Storybook.md"
+                "file": "Redux/Redux Toolkit.md"
               }
             }
           }
@@ -148,13 +148,17 @@
   },
   "active": "beb596ccaadc9b42",
   "lastOpenFiles": [
+    "Курс UlbiTV/38 Lesson.md",
+    "Redux/Redux Toolkit.md",
+    "Курс UlbiTV/37 Lesson.md",
+    "Курс UlbiTV/36 Lesson.md",
+    "Тестирование/Jest.md",
+    "Тестирование/Storybook.md",
     "Курс UlbiTV/35 Lesson.md",
     "Redux/Redux Оптимизация.md",
-    "Тестирование/Storybook.md",
+    "Курс UlbiTV/34 Lesson.md",
     "Webpack/Webpack Core.md",
     "Тестирование/React-Testing Library.md",
-    "Курс UlbiTV/34 Lesson.md",
-    "Redux/Redux Toolkit.md",
     "Курс UlbiTV/30 Lesson.md",
     "Redux/Flux.md",
     "Redux/Redux - База.md",
@@ -163,7 +167,6 @@
     "Redux/Redux.md",
     "Untitled.md",
     "Redux",
-    "Тестирование/Jest.md",
     "Курс UlbiTV/33 Lesson.md",
     "Linting/Husky.md",
     "Linting",
@@ -177,9 +180,6 @@
     "Курс UlbiTV/5 Lesson.md",
     "Курс UlbiTV/6 Lesson.md",
     "Курс UlbiTV/14 Lesson.md",
-    "Курс UlbiTV/2 Lesson.md",
-    "Курс UlbiTV/1 Lesson.md",
-    "Курс UlbiTV/12 Lesson.md",
     "Тестирование",
     "Pasted image 20241004124358.png",
     "I18n",

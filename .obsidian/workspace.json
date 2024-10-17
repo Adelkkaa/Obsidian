@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Курс UlbiTV/42 Lesson.md",
+                "file": "Курс UlbiTV/46 Lesson.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Курс UlbiTV/42 Lesson.md",
+                "file": "Курс UlbiTV/46 Lesson.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Курс UlbiTV/42 Lesson.md",
+                "file": "Курс UlbiTV/46 Lesson.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Курс UlbiTV/42 Lesson.md"
+                "file": "Курс UlbiTV/46 Lesson.md"
               }
             }
           }
@@ -148,8 +148,12 @@
   },
   "active": "beb596ccaadc9b42",
   "lastOpenFiles": [
-    "Курс UlbiTV/41 Lesson.md",
+    "Курс UlbiTV/45 Lesson.md",
+    "Курс UlbiTV/46 Lesson.md",
+    "Курс UlbiTV/44 Lesson.md",
+    "Курс UlbiTV/43 Lesson.md",
     "Курс UlbiTV/42 Lesson.md",
+    "Курс UlbiTV/41 Lesson.md",
     "Курс UlbiTV/40 Lesson.md",
     "Тестирование/Jest.md",
     "Redux/Redux Toolkit.md",
@@ -172,11 +176,7 @@
     "Redux/Redux.md",
     "Untitled.md",
     "Redux",
-    "Курс UlbiTV/33 Lesson.md",
-    "Linting/Husky.md",
     "Linting",
-    "Курс UlbiTV/32 Lesson.md",
-    "Курс UlbiTV/24 Lesson.md",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
     "Untitled.canvas",

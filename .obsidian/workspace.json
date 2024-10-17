@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Курс UlbiTV/40 Lesson.md",
+                "file": "Курс UlbiTV/42 Lesson.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Курс UlbiTV/40 Lesson.md",
+                "file": "Курс UlbiTV/42 Lesson.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Курс UlbiTV/40 Lesson.md",
+                "file": "Курс UlbiTV/42 Lesson.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Курс UlbiTV/40 Lesson.md"
+                "file": "Курс UlbiTV/42 Lesson.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "beb596ccaadc9b42",
   "lastOpenFiles": [
-    "Тестирование/Jest.md",
+    "Курс UlbiTV/41 Lesson.md",
+    "Курс UlbiTV/42 Lesson.md",
     "Курс UlbiTV/40 Lesson.md",
+    "Тестирование/Jest.md",
     "Redux/Redux Toolkit.md",
     "Курс UlbiTV/39 Lesson.md",
     "Курс UlbiTV/1 Lesson.md",
@@ -178,8 +180,6 @@
     "Untitled 1.canvas",
     "Untitled 2.canvas",
     "Untitled.canvas",
-    "2024-10-14.md",
-    "Курс UlbiTV/4 Lesson.md",
     "Тестирование",
     "Pasted image 20241004124358.png",
     "I18n",

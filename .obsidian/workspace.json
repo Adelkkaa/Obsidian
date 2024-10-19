@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "story",
+                "query": "reateSelector",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,10 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "beb596ccaadc9b42",
+  "active": "cf5aad618e455991",
   "lastOpenFiles": [
-    "Курс UlbiTV/51 Lesson.md",
+    "Курс UlbiTV/30 Lesson.md",
     "Redux/Redux Toolkit.md",
+    "Курс UlbiTV/52 Lesson.md",
+    "Курс UlbiTV/51 Lesson.md",
     "Курс UlbiTV/50 Lesson.md",
     "Курс UlbiTV/49 Lesson.md",
     "Курс UlbiTV/48 Lesson.md",
@@ -172,8 +174,6 @@
     "Redux/Redux Оптимизация.md",
     "Курс UlbiTV/34 Lesson.md",
     "Webpack/Webpack Core.md",
-    "Тестирование/React-Testing Library.md",
-    "Курс UlbiTV/30 Lesson.md",
     "Pasted image 20241014194618.png",
     "Redux",
     "Linting",

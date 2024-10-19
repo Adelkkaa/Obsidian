@@ -224,6 +224,70 @@ export const { reducer: loginReducer } = loginSlice;
 dispatch(loginByUsername({ username: username.toString(), password: password.toString() }));
 ```
 
+
+### createSelector
+
+Также в RTK можно создать селектор, который будет отдавать данные на основе данных с других селекторов
+
+Пример:
+```ts
+import { createSelector } from '@reduxjs/toolkit';
+import { getUserAuthData } from 'entities/User';
+import { RoutePath } from 'shared/config/routeConfig/routeConfig';
+import MainIcon from 'shared/assets/icons/main-20-20.svg';
+import AboutIcon from 'shared/assets/icons/about-20-20.svg';
+import ProfileIcon from 'shared/assets/icons/profile-20-20.svg';
+import ArticleIcon from 'shared/assets/icons/article-20-20.svg';
+import { SidebarItemType } from '../types/sidebar';
+
+export const getSidebarItems = createSelector(
+    getUserAuthData,
+    (userData) => {
+        const sidebarItemsList: SidebarItemType[] = [
+            {
+                path: RoutePath.main,
+                Icon: MainIcon,
+                text: 'Главная',
+            },
+            {
+                path: RoutePath.about,
+                Icon: AboutIcon,
+                text: 'О сайте',
+            },
+        ];
+
+        if (userData) {
+            sidebarItemsList.push(
+                {
+                    path: RoutePath.profile + userData.id,
+                    Icon: ProfileIcon,
+                    text: 'Профиль',
+                    authOnly: true,
+                },
+                {
+                    path: RoutePath.articles,
+                    Icon: ArticleIcon,
+                    text: 'Статьи',
+                    authOnly: true,
+                },
+            );
+        }
+
+        return sidebarItemsList;
+    },
+);
+
+```
+
+getUserAuthData: 
+```ts
+import { StateSchema } from 'app/providers/StoreProvider';
+
+export const getUserAuthData = (state: StateSchema) => state.user.authData;
+
+```
+
+createSelector принимает любое количество селекторов в качестве аргументов, а также последним аргументом принимает callback, аргументы которого - это результаты получения данных из вышеперечисленных слекторов (предыдущих аргументов)
 ### Использования extra в async thunk
 
 В async thunk можно передать различные аргументы в экстра, например baseApi, функцию navigate и так далее

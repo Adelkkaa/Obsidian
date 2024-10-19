@@ -331,3 +331,239 @@ export interface ThunkConfig<T> {
     extra: ThunkExtraArg;
 }
 ```
+
+### Нормализация данных и createEntityAdapter
+
+> Нормализация данных нужна для оптимизации производительности работы нашего приложения, она помогает избежать дублирования данных. Зачастую нормализация позволяет также производить изменение, удаление какого либо элемента в данных за линейную сложность O(n), ибо каждый элемент можно найти по ключу.
+
+Пример не нормализованных данных:
+```ts
+const blogPosts = [
+  {
+    id: 'post1',
+    author: { username: 'user1', name: 'User 1' },
+    body: '......',
+    comments: [
+      {
+        id: 'comment1',
+        author: { username: 'user2', name: 'User 2' },
+        comment: '.....'
+      },
+      {
+        id: 'comment2',
+        author: { username: 'user3', name: 'User 3' },
+        comment: '.....'
+      }
+    ]
+  },
+  {
+    id: 'post2',
+    author: { username: 'user2', name: 'User 2' },
+    body: '......',
+    comments: [
+      {
+        id: 'comment3',
+        author: { username: 'user3', name: 'User 3' },
+        comment: '.....'
+      },
+      {
+        id: 'comment4',
+        author: { username: 'user1', name: 'User 1' },
+        comment: '.....'
+      },
+      {
+        id: 'comment5',
+        author: { username: 'user3', name: 'User 3' },
+        comment: '.....'
+      }
+    ]
+  }
+  // and repeat many times
+]
+```
+
+Пример нормализованных данных
+```ts
+{
+    posts : {
+        byId : {
+            "post1" : {
+                id : "post1",
+                author : "user1",
+                body : "......",
+                comments : ["comment1", "comment2"]
+            },
+            "post2" : {
+                id : "post2",
+                author : "user2",
+                body : "......",
+                comments : ["comment3", "comment4", "comment5"]
+            }
+        },
+        allIds : ["post1", "post2"]
+    },
+    comments : {
+        byId : {
+            "comment1" : {
+                id : "comment1",
+                author : "user2",
+                comment : ".....",
+            },
+            "comment2" : {
+                id : "comment2",
+                author : "user3",
+                comment : ".....",
+            },
+            "comment3" : {
+                id : "comment3",
+                author : "user3",
+                comment : ".....",
+            },
+            "comment4" : {
+                id : "comment4",
+                author : "user1",
+                comment : ".....",
+            },
+            "comment5" : {
+                id : "comment5",
+                author : "user3",
+                comment : ".....",
+            },
+        },
+        allIds : ["comment1", "comment2", "comment3", "comment4", "comment5"]
+    },
+    users : {
+        byId : {
+            "user1" : {
+                username : "user1",
+                name : "User 1",
+            },
+            "user2" : {
+                username : "user2",
+                name : "User 2",
+            },
+            "user3" : {
+                username : "user3",
+                name : "User 3",
+            }
+        },
+        allIds : ["user1", "user2", "user3"]
+    }
+}
+```
+В нормализации данных может помочь createEntityAdapter, который выглядит следующим образом 
+```ts
+import {
+    createEntityAdapter,
+    createSlice, PayloadAction,
+} from '@reduxjs/toolkit';
+
+import { StateSchema } from 'app/providers/StoreProvider';
+import {
+    fetchCommentsByArticleId,
+} from 'pages/ArticleDetailsPage/model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
+
+export interface Comment {
+    id: string;
+    user: User;
+    text: string;
+}
+
+export interface ArticleDetailsCommentsSchema extends EntityState<Comment>{
+    isLoading?: boolean;
+    error?: string;
+}
+
+const commentsAdapter = createEntityAdapter<Comment>({
+    selectId: (comment) => comment.id,
+});
+
+export const getArticleComments = commentsAdapter.getSelectors<StateSchema>(
+    (state) => state.articleDetailsComments || commentsAdapter.getInitialState(),
+);
+
+const articleDetailsCommentsSlice = createSlice({
+    name: 'articleDetailsCommentsSlice',
+    initialState: commentsAdapter.getInitialState<ArticleDetailsCommentsSchema>({
+        isLoading: false,
+        error: undefined,
+        ids: [],
+        entities: {},
+    }),
+    reducers: {},
+    extraReducers: (builder) => {
+        builder
+            .addCase(fetchCommentsByArticleId.pending, (state) => {
+                state.error = undefined;
+                state.isLoading = true;
+            })
+            .addCase(fetchCommentsByArticleId.fulfilled, (
+                state,
+                action: PayloadAction<Comment[]>,
+            ) => {
+                state.isLoading = false;
+                commentsAdapter.setAll(state, action.payload);
+            })
+            .addCase(fetchCommentsByArticleId.rejected, (state, action) => {
+                state.isLoading = false;
+                state.error = action.payload;
+            });
+    },
+});
+
+export const { reducer: articleDetailsCommentsReducer } = articleDetailsCommentsSlice;
+
+```
+
+Данные в таком случае выглядят следующим образом:
+```ts
+articleDetailsComments: {
+    ids: [
+      '1',
+      '2',
+      '3'
+    ],
+    entities: {
+      '1': {
+        id: '1',
+        text: 'some comment',
+        articleId: '1',
+        userId: '1',
+        user: {
+          id: '1',
+          username: 'admin',
+          password: '123',
+          role: 'ADMIN',
+          avatar: 'https://cdn.britannica.com/95/196495-050-4790CC60/The-Bozo-Show-the-Clown-1960.jpg'
+        }
+      },
+      '2': {
+        id: '2',
+        text: 'some comment 2',
+        articleId: '1',
+        userId: '1',
+        user: {
+          id: '1',
+          username: 'admin',
+          password: '123',
+          role: 'ADMIN',
+          avatar: 'https://cdn.britannica.com/95/196495-050-4790CC60/The-Bozo-Show-the-Clown-1960.jpg'
+        }
+      },
+      '3': {
+        id: '3',
+        text: 'some comment 3',
+        articleId: '1',
+        userId: '1',
+        user: {
+          id: '1',
+          username: 'admin',
+          password: '123',
+          role: 'ADMIN',
+          avatar: 'https://cdn.britannica.com/95/196495-050-4790CC60/The-Bozo-Show-the-Clown-1960.jpg'
+        }
+      }
+    },
+    isLoading: false
+  }
+```

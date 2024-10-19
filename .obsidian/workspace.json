@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Курс UlbiTV/46 Lesson.md",
+                "file": "Redux/Redux Toolkit.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Курс UlbiTV/46 Lesson.md",
+                "file": "Redux/Redux Toolkit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Курс UlbiTV/46 Lesson.md",
+                "file": "Redux/Redux Toolkit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Курс UlbiTV/46 Lesson.md"
+                "file": "Redux/Redux Toolkit.md"
               }
             }
           }
@@ -148,15 +148,20 @@
   },
   "active": "beb596ccaadc9b42",
   "lastOpenFiles": [
-    "Курс UlbiTV/45 Lesson.md",
+    "Курс UlbiTV/51 Lesson.md",
+    "Redux/Redux Toolkit.md",
+    "Курс UlbiTV/50 Lesson.md",
+    "Курс UlbiTV/49 Lesson.md",
+    "Курс UlbiTV/48 Lesson.md",
+    "Курс UlbiTV/47 Lesson.md",
     "Курс UlbiTV/46 Lesson.md",
+    "Курс UlbiTV/45 Lesson.md",
     "Курс UlbiTV/44 Lesson.md",
     "Курс UlbiTV/43 Lesson.md",
     "Курс UlbiTV/42 Lesson.md",
     "Курс UlbiTV/41 Lesson.md",
     "Курс UlbiTV/40 Lesson.md",
     "Тестирование/Jest.md",
-    "Redux/Redux Toolkit.md",
     "Курс UlbiTV/39 Lesson.md",
     "Курс UlbiTV/1 Lesson.md",
     "Курс UlbiTV/38 Lesson.md",
@@ -169,12 +174,7 @@
     "Webpack/Webpack Core.md",
     "Тестирование/React-Testing Library.md",
     "Курс UlbiTV/30 Lesson.md",
-    "Redux/Flux.md",
-    "Redux/Redux - База.md",
     "Pasted image 20241014194618.png",
-    "Redux.md",
-    "Redux/Redux.md",
-    "Untitled.md",
     "Redux",
     "Linting",
     "Untitled 1.canvas",

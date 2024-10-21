@@ -13,10 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redux/Redux Toolkit.md",
+                "file": "React Tips/Intersection Observer.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Intersection Observer"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Redux/Redux Toolkit.md",
+                "file": "React Tips/Intersection Observer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Intersection Observer"
             }
           },
           {
@@ -102,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Redux/Redux Toolkit.md",
+                "file": "React Tips/Intersection Observer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Intersection Observer"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Redux/Redux Toolkit.md"
-              }
+                "file": "React Tips/Intersection Observer.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Intersection Observer"
             }
           }
         ]
@@ -146,10 +162,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cf5aad618e455991",
+  "active": "beb596ccaadc9b42",
   "lastOpenFiles": [
-    "Курс UlbiTV/30 Lesson.md",
+    "Курс UlbiTV/56 Lesson.md",
     "Redux/Redux Toolkit.md",
+    "React Tips/Intersection Observer.md",
+    "React Tips",
+    "Курс UlbiTV/55 Lesson.md",
+    "Курс UlbiTV/54 Lesson.md",
+    "Курс UlbiTV/53 Lesson.md",
+    "Курс UlbiTV/30 Lesson.md",
     "Курс UlbiTV/52 Lesson.md",
     "Курс UlbiTV/51 Lesson.md",
     "Курс UlbiTV/50 Lesson.md",
@@ -169,11 +191,6 @@
     "Курс UlbiTV/38 Lesson.md",
     "Курс UlbiTV/37 Lesson.md",
     "Курс UlbiTV/36 Lesson.md",
-    "Тестирование/Storybook.md",
-    "Курс UlbiTV/35 Lesson.md",
-    "Redux/Redux Оптимизация.md",
-    "Курс UlbiTV/34 Lesson.md",
-    "Webpack/Webpack Core.md",
     "Pasted image 20241014194618.png",
     "Redux",
     "Linting",
@@ -196,7 +213,6 @@
     "OIDC",
     "Docker",
     "OAuth 2.0",
-    "Oauth 2.0",
     "Без названия.canvas"
   ]
 }

@@ -1,0 +1,1 @@
+1) Написать [[Redux Toolkit#createSelector|createSelector]] , который будет формировать ссылки для сайдбара

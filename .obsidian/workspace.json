@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React Tips/Intersection Observer.md",
+                "file": "Курс UlbiTV/58 Lesson.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Intersection Observer"
+              "title": "58 Lesson"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React Tips/Intersection Observer.md",
+                "file": "Курс UlbiTV/58 Lesson.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Intersection Observer"
+              "title": "Backlinks for 58 Lesson"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React Tips/Intersection Observer.md",
+                "file": "Курс UlbiTV/58 Lesson.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Intersection Observer"
+              "title": "Outgoing links from 58 Lesson"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React Tips/Intersection Observer.md"
+                "file": "Курс UlbiTV/58 Lesson.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Intersection Observer"
+              "title": "Outline of 58 Lesson"
             }
           }
         ]
@@ -164,9 +164,11 @@
   },
   "active": "beb596ccaadc9b42",
   "lastOpenFiles": [
+    "Курс UlbiTV/57 Lesson.md",
+    "Курс UlbiTV/58 Lesson.md",
+    "React Tips/Intersection Observer.md",
     "Курс UlbiTV/56 Lesson.md",
     "Redux/Redux Toolkit.md",
-    "React Tips/Intersection Observer.md",
     "React Tips",
     "Курс UlbiTV/55 Lesson.md",
     "Курс UlbiTV/54 Lesson.md",
@@ -189,8 +191,6 @@
     "Курс UlbiTV/39 Lesson.md",
     "Курс UlbiTV/1 Lesson.md",
     "Курс UlbiTV/38 Lesson.md",
-    "Курс UlbiTV/37 Lesson.md",
-    "Курс UlbiTV/36 Lesson.md",
     "Pasted image 20241014194618.png",
     "Redux",
     "Linting",

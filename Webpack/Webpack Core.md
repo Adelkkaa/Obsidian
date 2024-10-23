@@ -1254,7 +1254,7 @@ package.json
   },
 ```
 
-### 13) Абсолютные пути (Alias)
+### 13) Абсолютные пути (Alias) и Fallback
 
 Для создания абсолютных путей нужно выполнить два действия 
 
@@ -1269,12 +1269,19 @@ export function buildResolvers(options: IOptions): Configuration['resolve'] {
         extensions: [".tsx", ".ts", ".js"], // Параметр, который позволяет не указывать расширения при исмпортах
         alias: {
             '@': options.paths.src
-        }
+        },
+        fallback: {
+	        'react/jsx-runtime': 'react/jsx-runtime.js',
+	        'react/jsx-dev-runtime': 'react/jsx-dev-runtime.js',
+		 },
     }
 }
 ```
 
-2) Доработать tsconfig
+> На старых версиях реакта не всегда находится jsx-runtime, пофиксить это можно при помощи fallback, который явно указывает где лежит какой-либо не найденный модуль (при условии, что такой модуль на проекте действительно есть)
+
+
+1) Доработать tsconfig
 
 ```jsx
 "baseUrl": ".",
@@ -2314,3 +2321,4 @@ declare module "admin/Router" {
 }
 
 ```
+

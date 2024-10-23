@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Курс UlbiTV/58 Lesson.md",
+                "file": "React Tips/Virtual List.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "58 Lesson"
+              "title": "Virtual List"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "reateSelector",
+                "query": "resolvers",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Курс UlbiTV/58 Lesson.md",
+                "file": "Webpack/Webpack Core.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 58 Lesson"
+              "title": "Backlinks for Webpack Core"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Курс UlbiTV/58 Lesson.md",
+                "file": "Webpack/Webpack Core.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 58 Lesson"
+              "title": "Outgoing links from Webpack Core"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Курс UlbiTV/58 Lesson.md"
+                "file": "Webpack/Webpack Core.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 58 Lesson"
+              "title": "Outline of Webpack Core"
             }
           }
         ]
@@ -164,33 +164,33 @@
   },
   "active": "beb596ccaadc9b42",
   "lastOpenFiles": [
-    "Курс UlbiTV/57 Lesson.md",
+    "Курс UlbiTV/63 Lesson.md",
+    "React Tips/Virtual List.md",
+    "Webpack/Webpack Core.md",
+    "Курс UlbiTV/62 Lesson.md",
+    "Курс UlbiTV/61 Lesson.md",
+    "Курс UlbiTV/60 Lesson.md",
+    "Курс UlbiTV/59 Lesson.md",
+    "Курс UlbiTV/13 Lesson.md",
+    "Курс UlbiTV/11 Lesson.md",
+    "Курс UlbiTV/10 Lesson.md",
+    "Курс UlbiTV/1 Lesson.md",
     "Курс UlbiTV/58 Lesson.md",
-    "React Tips/Intersection Observer.md",
-    "Курс UlbiTV/56 Lesson.md",
+    "Webpack/Перевод webpack конфига на typescript.md",
+    "Redux/Redux Оптимизация.md",
     "Redux/Redux Toolkit.md",
+    "Redux/Redux - База.md",
+    "Redux/Flux.md",
+    "OAuth 2.0/OAuth 2 0 59d0f1d2aba8449ba457007d929b9f59.md",
+    "React Tips/Intersection Observer.md",
+    "Linting/Husky.md",
+    "I18n/I18n.md",
+    "Курс UlbiTV/34 Lesson.md",
+    "Курс UlbiTV/57 Lesson.md",
+    "Docker/Docker b5b0e2a4cfd3405085096a0e5329a126.md",
+    "Курс UlbiTV/56 Lesson.md",
     "React Tips",
     "Курс UlbiTV/55 Lesson.md",
-    "Курс UlbiTV/54 Lesson.md",
-    "Курс UlbiTV/53 Lesson.md",
-    "Курс UlbiTV/30 Lesson.md",
-    "Курс UlbiTV/52 Lesson.md",
-    "Курс UlbiTV/51 Lesson.md",
-    "Курс UlbiTV/50 Lesson.md",
-    "Курс UlbiTV/49 Lesson.md",
-    "Курс UlbiTV/48 Lesson.md",
-    "Курс UlbiTV/47 Lesson.md",
-    "Курс UlbiTV/46 Lesson.md",
-    "Курс UlbiTV/45 Lesson.md",
-    "Курс UlbiTV/44 Lesson.md",
-    "Курс UlbiTV/43 Lesson.md",
-    "Курс UlbiTV/42 Lesson.md",
-    "Курс UlbiTV/41 Lesson.md",
-    "Курс UlbiTV/40 Lesson.md",
-    "Тестирование/Jest.md",
-    "Курс UlbiTV/39 Lesson.md",
-    "Курс UlbiTV/1 Lesson.md",
-    "Курс UlbiTV/38 Lesson.md",
     "Pasted image 20241014194618.png",
     "Redux",
     "Linting",

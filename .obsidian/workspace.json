@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React Tips/Virtual List.md",
+                "file": "Linting/Eslint.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Virtual List"
+              "title": "Eslint"
             }
           }
         ]
@@ -164,8 +164,14 @@
   },
   "active": "beb596ccaadc9b42",
   "lastOpenFiles": [
-    "Курс UlbiTV/63 Lesson.md",
+    "Курс UlbiTV/64 Lesson.md",
+    "Linting/Eslint.md",
+    "Computer Science/AST.md",
+    "Computer Science",
+    "Computer Science/Own Programming Language.md",
     "React Tips/Virtual List.md",
+    "Computer Science",
+    "Курс UlbiTV/63 Lesson.md",
     "Webpack/Webpack Core.md",
     "Курс UlbiTV/62 Lesson.md",
     "Курс UlbiTV/61 Lesson.md",
@@ -186,11 +192,7 @@
     "Linting/Husky.md",
     "I18n/I18n.md",
     "Курс UlbiTV/34 Lesson.md",
-    "Курс UlbiTV/57 Lesson.md",
-    "Docker/Docker b5b0e2a4cfd3405085096a0e5329a126.md",
-    "Курс UlbiTV/56 Lesson.md",
     "React Tips",
-    "Курс UlbiTV/55 Lesson.md",
     "Pasted image 20241014194618.png",
     "Redux",
     "Linting",
@@ -211,8 +213,6 @@
     "HTML",
     "Новая папка",
     "OIDC",
-    "Docker",
-    "OAuth 2.0",
     "Без названия.canvas"
   ]
 }

@@ -1,0 +1,1 @@
+1) Поправить стили на странице ArticleDetailsPage

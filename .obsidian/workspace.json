@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linting/Eslint.md",
+                "file": "Курс UlbiTV/70 Lesson.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Eslint"
+              "title": "70 Lesson"
             }
           }
         ]
@@ -164,8 +164,14 @@
   },
   "active": "beb596ccaadc9b42",
   "lastOpenFiles": [
-    "Курс UlbiTV/64 Lesson.md",
+    "Курс UlbiTV/69 Lesson.md",
+    "Курс UlbiTV/70 Lesson.md",
+    "Курс UlbiTV/68 Lesson.md",
+    "Курс UlbiTV/67 Lesson.md",
+    "Курс UlbiTV/66 Lesson.md",
+    "Курс UlbiTV/65 Lesson.md",
     "Linting/Eslint.md",
+    "Курс UlbiTV/64 Lesson.md",
     "Computer Science/AST.md",
     "Computer Science",
     "Computer Science/Own Programming Language.md",
@@ -186,12 +192,6 @@
     "Redux/Redux Оптимизация.md",
     "Redux/Redux Toolkit.md",
     "Redux/Redux - База.md",
-    "Redux/Flux.md",
-    "OAuth 2.0/OAuth 2 0 59d0f1d2aba8449ba457007d929b9f59.md",
-    "React Tips/Intersection Observer.md",
-    "Linting/Husky.md",
-    "I18n/I18n.md",
-    "Курс UlbiTV/34 Lesson.md",
     "React Tips",
     "Pasted image 20241014194618.png",
     "Redux",

@@ -353,3 +353,125 @@ Loading.decorators = [StoreDecorator({
 
 ```
 
+
+## Мокаем ответы на запросы
+
+К примеру у нас есть такой компонент, где данные получаются с запроса:
+
+```tsx
+import { useTranslation } from 'react-i18next';
+import { memo } from 'react';
+import { ArticleList } from '@/entities/Article';
+import { Text, TextSize } from '@/shared/ui/Text/Text';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { VStack } from '@/shared/ui/Stack';
+import {
+    useArticleRecommendationsList,
+} from '../../api/aritcleRecommendationsApi';
+
+interface ArticleRecommendationsListProps {
+    className?: string;
+}
+
+export const ArticleRecommendationsList = memo((props: ArticleRecommendationsListProps) => {
+    const { className } = props;
+    const { t } = useTranslation();
+    const { isLoading, data: articles, error } = useArticleRecommendationsList(3);
+
+    if (isLoading || error || !articles) {
+        return null;
+    }
+
+    return (
+        <VStack gap="8" className={classNames('', {}, [className])}>
+            <Text
+                size={TextSize.L}
+                title={t('Рекомендуем')}
+            />
+            <ArticleList
+                articles={articles}
+                target="_blank"
+            />
+        </VStack>
+    );
+});
+
+```
+
+Чтобы замокать ответ в сторибуке, необходимо установить зависимость `storybook-addon-mock`
+
+1) Добавляем аддон
+```js
+module.exports = {
+    stories: [
+        '../../src/**/*.stories.@(js|jsx|ts|tsx)',
+    ],
+    addons: [
+        '@storybook/addon-links',
+        '@storybook/addon-essentials',
+        '@storybook/addon-interactions',
+        'storybook-addon-mock/register', +++
+    ],
+    framework: '@storybook/react',
+    core: {
+        builder: 'webpack5',
+    },
+};
+
+```
+
+2) Используем
+```tsx
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+import withMock from 'storybook-addon-mock';
+import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
+import { Article } from '@/entities/Article';
+import { ArticleRecommendationsList } from './ArticleRecommendationsList';
+
+export default {
+    title: 'features/ArticleRecommendationsList',
+    component: ArticleRecommendationsList,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
+    decorators: [withMock],
+} as ComponentMeta<typeof ArticleRecommendationsList>;
+
+const Template: ComponentStory<typeof ArticleRecommendationsList> = (args) => <ArticleRecommendationsList {...args} />;
+
+const article: Article = {
+    id: '1',
+    img: '',
+    createdAt: '',
+    views: 123,
+    user: { id: '1', username: '123' },
+    blocks: [],
+    type: [],
+    title: '123',
+    subtitle: 'asfsa',
+};
+
+export const Normal = Template.bind({});
+Normal.args = {};
+Normal.decorators = [StoreDecorator({})];
+Normal.parameters = {
+    mockData: [
+        {
+            url: `${__API__}/articles?_limit=3`,
+            method: 'GET',
+            status: 200,
+            response: [
+                { ...article, id: '1' },
+                { ...article, id: '2' },
+                { ...article, id: '3' },
+            ],
+        },
+    ],
+};
+
+```
+
+> Главное, чтобы адрес совпадал, включая все query параметры
+

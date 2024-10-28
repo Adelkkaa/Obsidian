@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Курс UlbiTV/74 Lesson.md",
+                "file": "React Tips/Typescript tips.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "74 Lesson"
+              "title": "Typescript tips"
             }
           }
         ]
@@ -164,8 +164,18 @@
   },
   "active": "beb596ccaadc9b42",
   "lastOpenFiles": [
-    "Курс UlbiTV/73 Lesson.md",
+    "Курс UlbiTV/78 Lesson.md",
+    "React Tips/Typescript tips.md",
+    "Webpack/Webpack Core.md",
+    "Webpack/Перевод webpack конфига на typescript.md",
+    "React Tips/Intersection Observer.md",
+    "Курс UlbiTV/77 Lesson.md",
+    "Pasted image 20241028110728.png",
+    "Курс UlbiTV/76 Lesson.md",
+    "Курс UlbiTV/75 Lesson.md",
+    "Тестирование/Storybook.md",
     "Курс UlbiTV/74 Lesson.md",
+    "Курс UlbiTV/73 Lesson.md",
     "Курс UlbiTV/72 Lesson.md",
     "Курс UlbiTV/71 Lesson.md",
     "Курс UlbiTV/70 Lesson.md",
@@ -182,16 +192,7 @@
     "React Tips/Virtual List.md",
     "Computer Science",
     "Курс UlbiTV/63 Lesson.md",
-    "Webpack/Webpack Core.md",
     "Курс UlbiTV/62 Lesson.md",
-    "Курс UlbiTV/61 Lesson.md",
-    "Курс UlbiTV/60 Lesson.md",
-    "Курс UlbiTV/59 Lesson.md",
-    "Курс UlbiTV/13 Lesson.md",
-    "Курс UlbiTV/11 Lesson.md",
-    "Курс UlbiTV/10 Lesson.md",
-    "Курс UlbiTV/1 Lesson.md",
-    "Курс UlbiTV/58 Lesson.md",
     "React Tips",
     "Pasted image 20241014194618.png",
     "Redux",
@@ -209,7 +210,6 @@
     "HTML/Untitled 14.png",
     "HTML/Untitled 12.png",
     "HTML/Untitled 9.png",
-    "HTML/Untitled 6.png",
     "HTML",
     "Новая папка",
     "OIDC",

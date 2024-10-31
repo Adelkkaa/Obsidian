@@ -1,0 +1,1 @@
+1) Добавить storybook-addon-themes

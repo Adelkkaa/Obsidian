@@ -1,0 +1,1 @@
+1) Сделать fix правила для fsd-public-api-imports [[Eslint#Добавление fix свойства|Конспект тут]]

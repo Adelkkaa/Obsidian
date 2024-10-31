@@ -1,0 +1,1 @@
+1) Написать скрипт для создания public api (index.ts) в shared/ui/ComponentName

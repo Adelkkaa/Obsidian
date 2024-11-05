@@ -631,3 +631,132 @@ articleDetailsComments: {
     isLoading: false
   }
 ```
+
+### Отказ от использования useSelector и useDispatch в компонентах
+Для такого нам необходимо написать две функции:
+1) buildSelector
+2) buildSlice
+
+```ts
+import { useSelector } from 'react-redux';
+import { StateSchema } from '@/app/providers/StoreProvider';
+
+type Selector<T> = (state: StateSchema) => T;
+type Result<T> = [() => T, Selector<T>];
+
+export function buildSelector<T>(selector: Selector<T>): Result<T> {
+    const useSelectorHook = () => useSelector(selector);
+
+    return [useSelectorHook, selector];
+}
+
+```
+
+Использование `buildSelector`:
+```ts
+import { buildSelector } from '@/shared/lib/store';
+
+export const [useCounterValue, getCounterValue] = buildSelector(
+    (state) => state.counter.value,
+);
+
+```
+
+
+2) 
+```ts 
+import { bindActionCreators, createSlice } from '@reduxjs/toolkit';
+import { SliceCaseReducers, CreateSliceOptions } from '@reduxjs/toolkit/dist';
+import { useDispatch } from 'react-redux';
+import { useMemo } from 'react';
+
+export function buildSlice<
+    State,
+    CaseReducers extends SliceCaseReducers<State>,
+    Name extends string = string
+    >(options: CreateSliceOptions<State, CaseReducers, Name>) {
+    const slice = createSlice(options);
+
+    const useActions = (): typeof slice.actions => {
+        const dispatch = useDispatch();
+
+        // @ts-ignore
+        return useMemo(() => bindActionCreators(slice.actions, dispatch), [dispatch]);
+    };
+
+    return {
+        ...slice,
+        useActions,
+    };
+}```
+
+Использование `buildSlice`
+```ts
+import { CounterSchema } from '../types/counterSchema';
+import { buildSlice } from '@/shared/lib/store';
+
+const initialState: CounterSchema = {
+    value: 0,
+};
+
+export const counterSlice = buildSlice({
+    name: 'counter',
+    initialState,
+    reducers: {
+        increment(state) {
+            state.value += 1;
+        },
+        decrement(state) {
+            state.value -= 1;
+        },
+    },
+});
+
+export const {
+    actions: counterActions,
+    reducer: counterReducer,
+    useActions: useCounterActions,
+} = counterSlice;
+
+```
+
+
+Использование в компоненте:
+```tsx
+import { useTranslation } from 'react-i18next';
+import { Button } from '@/shared/ui';
+import { useCounterActions } from '../model/slice/counterSlice';
+import { useCounterValue } from '../model/selectors/getCounterValue/getCounterValue';
+
+export const Counter = () => {
+    const { t } = useTranslation();
+    const counterValue = useCounterValue();
+    const { decrement, increment } = useCounterActions();
+
+    const incrementFn = () => {
+        increment();
+    };
+
+    const decrementFn = () => {
+        decrement();
+    };
+    return (
+        <div>
+            <h1 data-testid="value-title">{counterValue}</h1>
+            <Button
+                data-testid="increment-btn"
+                onClick={incrementFn}
+            >
+                {t('increment')}
+            </Button>
+            <Button
+                data-testid="decrement-btn"
+                onClick={decrementFn}
+            >
+                {t('decrement')}
+            </Button>
+        </div>
+    );
+};
+
+```

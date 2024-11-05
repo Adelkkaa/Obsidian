@@ -1,0 +1,1 @@
+1) Генерировать html report на loki в ci
